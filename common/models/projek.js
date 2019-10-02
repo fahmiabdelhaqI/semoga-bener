@@ -1,10 +1,10 @@
 'use strict';
 
-module.exports = function(Admin) {
-    Admin.getAdminByName = function(name, callback){
+module.exports = function(Projek) {
+    Projek.getProjekByName = function(name, callback){
         new Promise(function(resolve, reject) {
             //find name
-            Admin.find({where :{nama : {like : name}}}, function(err, result){
+            Projek.find({where :{nama : {like : name}}}, function(err, result){
                 if (err) reject (err);
                 if (result === null){
                     err = new Error("User Not Found");
@@ -21,8 +21,8 @@ module.exports = function(Admin) {
         });
     };
 
-    Admin.remoteMethod(
-        'getAdminByName',
+    Projek.remoteMethod(
+        'getProjekByName',
         {
             description : 'get user by name',
             accepts: [
@@ -31,7 +31,7 @@ module.exports = function(Admin) {
             returns : {
                 arg : 'res', type: 'object', root: true
             },
-            http:{path: '/getAdminByName', verb: 'get'},
+            http:{path: '/getProjekByName', verb: 'get'},
         }
     );
 

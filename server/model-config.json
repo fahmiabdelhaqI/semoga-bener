@@ -42,5 +42,9 @@
   "admin": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "projek": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

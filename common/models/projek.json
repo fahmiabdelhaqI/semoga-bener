@@ -1,19 +1,23 @@
 {
-    "name": "admin",
+    "name": "projek",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "nama": {
+      "namaProjek": {
         "type": "string",
         "required" : true
       },
-        "password": {
-        "type": "string",
-        "required": true
-                    }
+     
+        "PenanggungJawab": {
+          "type": "string"
+        },
+     
+            "KetuaProjek": {
+              "type": "string"
+            }
     },
     "validations": [],
     "relations": {},
