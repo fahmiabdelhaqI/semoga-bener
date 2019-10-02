@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb" :{
+  "name": "mongodb",
+  "database": "testing",
+  "connector" : "mongodb",
+  "extended_operators":true,
+  "allowextEndedOperators": true
+  }
+}
