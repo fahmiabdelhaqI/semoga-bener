@@ -43,7 +43,15 @@
     "dataSource": "mongodb",
     "public": true
   },
+<<<<<<< HEAD
   "projek": {
+=======
+  "Employee": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Owner": {
+>>>>>>> f4cd8770a3be4c86807e59c3a3a35182f6f7c1b9
     "dataSource": "mongodb",
     "public": true
   }
