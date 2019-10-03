@@ -1,0 +1,31 @@
+{
+  "name": "Owner",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nama_owner": {
+      "type": "string",
+      "required" : true
+    },
+   
+      "alamat": {
+        "type": "string"
+    },
+   
+      "tanggalLahir": {
+        "type": "date"
+    },
+         
+      "nomorTelepon": {
+        "type": "string"
+    }
+  },
+  
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
