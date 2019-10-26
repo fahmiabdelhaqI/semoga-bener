@@ -30,7 +30,18 @@
   },
   
   "validations": [],
-  "relations": {},
+  "relations": {
+    "projek":{
+      "type":"belongsTo",
+      "model":"projek",
+      "foreignkey":"projekId"
+    },
+    "owner":{
+      "type":"hasMany",
+      "model":"Owner",
+      "foreignkey":"OwnerId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
